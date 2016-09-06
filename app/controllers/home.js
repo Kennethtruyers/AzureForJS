@@ -10,6 +10,7 @@ router.get('/', function (req, res, next) {
   var articles = [new Article(), new Article()];
     res.render('index', {
       title: 'Generator-Express MVC for MallorcaJS',
-      articles: articles
+      articles: articles,
+      image: process.env.CDN + '/img/azure.png'
     });
 });
